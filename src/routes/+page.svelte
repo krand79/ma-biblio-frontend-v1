@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Navbar from '$lib/components/navbar.svelte';
 	import Carousel from '$lib/components/carousel.svelte';
+	import Categories from '$lib/components/containers/categories.svelte';
 </script>
 
 <svelte:head>
@@ -9,4 +10,14 @@
 
 <Navbar />
 <Carousel />
-<main />
+
+<main class="flex flex-col px-12">
+	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
+	<Categories />
+	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
+	<Categories />
+	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
+	<Categories />
+	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
+	<Categories />
+</main>
