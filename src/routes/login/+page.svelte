@@ -75,5 +75,9 @@
 		<div class="form-control">
 			<a href="/forgot-password" class="link link-primary"> Oublié votre mot de pass ? </a>
 		</div>
+		<!-- signup -->
+		<div class="form-control">
+			<a href="/signup" class="link link-primary text-right"> Créer un compte </a>
+		</div>
 	</form>
 </div>

@@ -2,10 +2,17 @@ import { fail } from '@sveltejs/kit';
 import { superValidate } from 'sveltekit-superforms/server';
 import { z } from 'zod';
 
-const loginSchema = z.object({
-	email: z.string().email(),
-	password: z.string().min(6)
-});
+const loginSchema = z
+	.object({
+		email: z.string().email(),
+		name: z.string().min(3),
+		password: z.string().min(6),
+		passwordConfirm: z.string().min(6)
+	})
+	.refine((data) => data.password === data.passwordConfirm, {
+		message: "Passwords don't match",
+		path: ['passwordConfirm']
+	});
 
 export const load = async (event: any) => {
 	const form = await superValidate(event, loginSchema);
@@ -20,7 +27,7 @@ export const actions = {
 				form
 			});
 		}
-		
+
 		return { form };
 	}
 };
