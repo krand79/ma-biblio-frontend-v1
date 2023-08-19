@@ -2,6 +2,7 @@
 	import Navbar from '$lib/components/navbar.svelte';
 	import Carousel from '$lib/components/carousel.svelte';
 	import Categories from '$lib/components/containers/categories.svelte';
+	import Books from '$lib/components/containers/books.svelte';
 </script>
 
 <svelte:head>
@@ -15,9 +16,9 @@
 	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
 	<Categories />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
-	<Categories />
+	<Books />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
-	<Categories />
+	<Books />
 	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
 	<Categories />
 </main>
