@@ -2,16 +2,36 @@
 	import type { PageData } from './$types';
 	import { superForm } from 'sveltekit-superforms/client';
 	import toast, { Toaster } from 'svelte-french-toast';
+	import { goto } from '$app/navigation';
 	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	export let data: PageData;
 
 	const { form, errors, enhance, constraints } = superForm(data.form, {
 		resetForm: true,
-		onUpdate({ form }) {
+		onUpdate: async ({ form }) => {
 			// Form validation
 			if (form.valid) {
-				toast.success('Bienvenue !');
+				const user = {
+					...form.data
+				};
+				const response = await fetch('http://127.0.0.1:8000/api/auth/login', {
+					method: 'POST',
+					body: JSON.stringify(user),
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				});
+				const data = await response.json();
+				console.log(data);
+				if (response.ok) {
+					toast.success('Bienvenue');
+					setTimeout(() => {
+						goto('/');
+					}, 2000);
+				} else {
+					toast.error(data?.detail || 'Une erreur est survenue');
+				}
 			}
 		}
 	});

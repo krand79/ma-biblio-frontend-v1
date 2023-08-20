@@ -27,7 +27,7 @@
 					toast.success('Votre Compte a été Créer avec Succès');
 					setTimeout(() => {
 						goto('/login');
-					}, 1000);
+					}, 2000);
 				} else {
 					toast.error(
 						data?.email[0]
