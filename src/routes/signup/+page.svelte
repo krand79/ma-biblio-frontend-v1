@@ -2,20 +2,39 @@
 	import type { PageData } from './$types';
 	import { superForm } from 'sveltekit-superforms/client';
 	import toast, { Toaster } from 'svelte-french-toast';
+	import { goto } from '$app/navigation';
 	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	export let data: PageData;
 
 	const { form, errors, enhance, constraints } = superForm(data.form, {
 		resetForm: true,
-		onUpdate({ form }) {
-			// Form validation
+		onUpdate: async ({ form }) => {
 			if (form.valid) {
-				toast.success("Email d'activation envoyé !");
-				toast('Vous devez activer votre Email avant de se connecter!', {
-					icon: '📧',
-					style: 'border: 1px solid orange; padding: 16px; color: orange;'
+				const user = {
+					...form.data
+				};
+				const response = await fetch('http://127.0.0.1:8000/api/auth/register', {
+					method: 'POST',
+					body: JSON.stringify(user),
+					headers: {
+						'Content-Type': 'application/json'
+					}
 				});
+				const data = await response.json();
+				console.log(data);
+				if (response.ok) {
+					toast.success('Votre Compte a été Créer avec Succès');
+					setTimeout(() => {
+						goto('/login');
+					}, 1000);
+				} else {
+					toast.error(
+						data?.email[0]
+							? 'Un compte avec cette adresse email existe déjà'
+							: 'Une erreur est survenue'
+					);
+				}
 			}
 		}
 	});

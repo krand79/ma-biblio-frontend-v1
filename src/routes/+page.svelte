@@ -16,10 +16,10 @@
 <main class="flex flex-col mb-12 px-12">
 	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
 	<Categories />
-	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
+	<!-- <div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
 	<Books />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
-	<Books />
+	<Books /> -->
 	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
 	<Stats />
 </main>

@@ -1,10 +1,26 @@
+<script lang="ts">
+	export let book: {
+		titre: string;
+		isbn: string;
+		auteur: string;
+		resume: string;
+		image: string;
+		date_de_publication: string;
+		disponible: boolean;
+	};
+</script>
+
 <div class="card card-side bg-base-100 shadow-xl">
-	<figure class="w-1/2"><img src="logo.svg" alt="Movie" /></figure>
+	<figure class="w-1/2"><img src={book.image} alt={book.titre} /></figure>
 	<div class="card-body">
-		<h2 class="card-title">New movie is released!</h2>
-		<p>Click the button to watch on Jetflix app.</p>
+		<h2 class="card-title">
+			{book.titre}
+		</h2>
+		<p>
+			{book.resume}
+		</p>
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary">Watch</button>
+			<a href="/books?isbn={book.isbn}"><button class="btn btn-primary">Emprunter</button></a>
 		</div>
 	</div>
 </div>
