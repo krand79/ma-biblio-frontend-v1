@@ -3,6 +3,7 @@
 	import { superForm } from 'sveltekit-superforms/client';
 	import toast, { Toaster } from 'svelte-french-toast';
 	import { goto } from '$app/navigation';
+	import storeuser from '../../store/user';
 	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	export let data: PageData;
@@ -25,6 +26,9 @@
 				const data = await response.json();
 				console.log(data);
 				if (response.ok) {
+					storeuser.set({
+						...data
+					});
 					toast.success('Bienvenue');
 					setTimeout(() => {
 						goto('/');
@@ -35,6 +39,7 @@
 			}
 		}
 	});
+	console.log($form);
 </script>
 
 <svelte:head>

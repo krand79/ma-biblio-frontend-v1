@@ -20,7 +20,7 @@ export const actions = {
 				form
 			});
 		}
-		
+
 		return { form };
 	}
 };
