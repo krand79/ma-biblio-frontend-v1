@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Historique",
+    "image": "https://media.istockphoto.com/id/936911748/photo/old-hourglass-and-ancient-book.jpg?s=612x612&w=0&k=20&c=jQX5TjGDgXEDSKfY2cHEL4x7oc7pH4B_ApO0Q4aXMaI=",
+    "description": "Plongez dans le passé à travers des récits captivants de moments historiques, de grandes figures et d'événements qui ont façonné le monde d'aujourd'hui."
+  },
+  {
+    "id": 2,
+    "name": "Fiction littéraire",
+    "image": "https://media.istockphoto.com/id/514164446/photo/abstract-magic-book-on-wooden-background.jpg?s=612x612&w=0&k=20&c=swXAScckids5GACp33jNfKZd6EgLom7N9tk0odHnXzw=",
+    "description": "Explorez un monde d'imagination avec des romans littéraires qui mettent l'accent sur le style d'écriture, les personnages complexes et les thèmes profonds."
+  },
+  {
+    "id": 3,
+    "name": "Science-fiction et Fantaisie",
+    "image": "https://media.istockphoto.com/id/1242139791/vector/abstract-open-schoolbook-with-icons-of-school-subjects.jpg?s=612x612&w=0&k=20&c=471L4qYzgwpdcvdFCW_Kc2KwWN3bxNUd-wVGQcUMLpQ=",
+    "description": "Voyagez vers des mondes alternatifs, des futurs lointains et des royaumes enchantés où la science et la magie défient les limites de la réalité."
+  },
+  {
+    "id": 4,
+    "name": "Développement personnel et Bien-être",
+    "image": "https://media.istockphoto.com/id/1087185964/photo/young-man-passes-from-a-peak-to-another-on-a-book-the-concept-of-scholarship.jpg?s=612x612&w=0&k=20&c=8ugGNJhSBIUHqYQAlLY99vxiNdN_4nP1SGv1-kb1eXk=",
+    "description": "Découvrez des ouvrages qui offrent des conseils pratiques, des techniques de croissance personnelle et des perspectives pour améliorer la vie quotidienne et le bien-être."
+  },
+  {
+    "id": 5,
+    "name": "Sciences et Découvertes",
+    "image": "https://media.istockphoto.com/id/1085051844/photo/door-in-bible.jpg?s=612x612&w=0&k=20&c=2FqBd2WofVDc6-Vwki89uXwkayPdKkpbweswvdbRi-I=",
+    "description": "Plongez dans le monde de la science, de la nature et de la technologie grâce à des livres qui explorent des sujets allant de la biologie à l'astronomie en passant par les avancées scientifiques."
+  }
+]

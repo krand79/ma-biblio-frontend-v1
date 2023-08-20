@@ -1,0 +1,293 @@
+[
+	{
+		"titre": "Goodbye to the Buttermilk Sky",
+		"auteur": "Julia Oliver",
+		"date_de_publication": 1994,
+		"resume": "A heartfelt story of farewells and memories.",
+		"image": "http://images.amazon.com/images/P/1881320189.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "1881320189",
+		"copies": 27
+	},
+	{
+		"titre": "The Testament",
+		"auteur": "John Grisham",
+		"date_de_publication": 1999,
+		"resume": "A legal thriller that delves into family secrets and moral dilemmas.",
+		"image": "http://images.amazon.com/images/P/0440234743.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0440234743",
+		"copies": 13
+	},
+	{
+		"titre": "Beloved (Plume Contemporary Fiction)",
+		"auteur": "Toni Morrison",
+		"date_de_publication": 1994,
+		"resume": "A powerful exploration of the legacy of slavery and its impact on lives.",
+		"image": "http://images.amazon.com/images/P/0452264464.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0452264464",
+		"copies": 20
+	},
+	{
+		"titre": "Our Dumb Century: The Onion Presents 100 Years of Headlines from America's Finest News Source",
+		"auteur": "The Onion",
+		"date_de_publication": 1999,
+		"resume": "A satirical collection of humorous headlines from various historical events.",
+		"image": "http://images.amazon.com/images/P/0609804618.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0609804618",
+		"copies": 8
+	},
+	{
+		"titre": "New Vegetarian: Bold and Beautiful Recipes for Every Occasion",
+		"auteur": "Celia Brooks Brown",
+		"date_de_publication": 2001,
+		"resume": "A cookbook featuring a diverse range of vegetarian recipes.",
+		"image": "http://images.amazon.com/images/P/1841721522.01.LZZZZZZZ.jpg",
+		"categorie": 2,
+		"isbn": "1841721522",
+		"copies": 34
+	},
+	{
+		"titre": "If I'd Known Then What I Know Now: Why Not Learn from the Mistakes of Others? : You Can't Afford to Make Them All Yourself",
+		"auteur": "J. R. Parrish",
+		"date_de_publication": 2003,
+		"resume": "A guide to learning from the mistakes of others for personal growth.",
+		"image": "http://images.amazon.com/images/P/1879384493.01.LZZZZZZZ.jpg",
+		"categorie": 2,
+		"isbn": "1879384493",
+		"copies": 15
+	},
+	{
+		"titre": "Mary-Kate & Ashley Switching Goals (Mary-Kate and Ashley Starring in)",
+		"auteur": "Mary-Kate & Ashley Olsen",
+		"date_de_publication": 2000,
+		"resume": "The Olsen twins embark on a comedic adventure filled with mistaken identities.",
+		"image": "http://images.amazon.com/images/P/0061076031.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0061076031",
+		"copies": 22
+	},
+	{
+		"titre": "Tell Me This Isn't Happening",
+		"auteur": "Robynn Clairday",
+		"date_de_publication": 1999,
+		"resume": "A thrilling mystery involving unexpected events and surprising twists.",
+		"image": "http://images.amazon.com/images/P/0439095026.01.LZZZZZZZ.jpg",
+		"categorie": 3,
+		"isbn": "0439095026",
+		"copies": 12
+	},
+	{
+		"titre": "Flood : Mississippi 1927",
+		"auteur": "Kathleen Duey",
+		"date_de_publication": 1998,
+		"resume": "A historical novel depicting the catastrophic Mississippi River flood of 1927.",
+		"image": "http://images.amazon.com/images/P/0689821166.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "0689821166",
+		"copies": 7
+	},
+	{
+		"titre": "Wild Animus",
+		"auteur": "Rich Shapero",
+		"date_de_publication": 2004,
+		"resume": "A unique journey of self-discovery and transformation in the wilderness.",
+		"image": "http://images.amazon.com/images/P/0971880107.01.LZZZZZZZ.jpg",
+		"categorie": 2,
+		"isbn": "0971880107",
+		"copies": 30
+	},
+	{
+		"titre": "Airframe",
+		"auteur": "Michael Crichton",
+		"date_de_publication": 1997,
+		"resume": "A gripping techno-thriller centered around aviation safety and investigations.",
+		"image": "http://images.amazon.com/images/P/0345402871.01.LZZZZZZZ.jpg",
+		"categorie": 3,
+		"isbn": "0345402871",
+		"copies": 18
+	},
+	{
+		"titre": "Timeline",
+		"auteur": "MICHAEL CRICHTON",
+		"date_de_publication": 2000,
+		"resume": "A thrilling adventure involving time travel and historical mysteries.",
+		"image": "http://images.amazon.com/images/P/0345417623.01.LZZZZZZZ.jpg",
+		"categorie": 3,
+		"isbn": "0345417623",
+		"copies": 9
+	},
+	{
+		"titre": "Classical Mythology",
+		"auteur": "Mark P. O. Morford",
+		"date_de_publication": 2002,
+		"resume": "An in-depth exploration of classical myths and their cultural significance.",
+		"image": "http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
+		"categorie": 5,
+		"isbn": "0195153448",
+		"copies": 25
+	},
+	{
+		"titre": "Clara Callan",
+		"auteur": "Richard Bruce Wright",
+		"date_de_publication": 2001,
+		"resume": "A touching narrative of a woman's journey through personal and societal challenges.",
+		"image": "http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0002005018",
+		"copies": 36
+	},
+
+	{
+		"titre": "Decision in Normandy",
+		"auteur": "Carlo D'Este",
+		"date_de_publication": 1991,
+		"resume": "An in-depth analysis of the pivotal decisions made during the Normandy campaign.",
+		"image": "http://images.amazon.com/images/P/0060973129.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "0060973129",
+		"copies": 19
+	},
+	{
+		"titre": "Flu: The Story of the Great Influenza Pandemic of 1918 and the Search for the Virus That Caused It",
+		"auteur": "Gina Bari Kolata",
+		"date_de_publication": 1999,
+		"resume": "An exploration of the devastating 1918 influenza pandemic and the scientific investigation behind it.",
+		"image": "http://images.amazon.com/images/P/0374157065.01.LZZZZZZZ.jpg",
+		"categorie": 5,
+		"isbn": "0374157065",
+		"copies": 10
+	},
+	{
+		"titre": "The Mummies of Urumchi",
+		"auteur": "E. J. W. Barber",
+		"date_de_publication": 1999,
+		"resume": "A captivating exploration of the mummies and culture of ancient Urumchi.",
+		"image": "http://images.amazon.com/images/P/0393045218.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "0393045218",
+		"copies": 26
+	},
+	{
+		"titre": "The Kitchen God's Wife",
+		"auteur": "Amy Tan",
+		"date_de_publication": 1991,
+		"resume": "A poignant story of family secrets and resilience across generations.",
+		"image": "http://images.amazon.com/images/P/0399135782.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0399135782",
+		"copies": 11
+	},
+	{
+		"titre": "What If?: The World's Foremost Military Historians Imagine What Might Have Been",
+		"auteur": "Robert Cowley",
+		"date_de_publication": 2000,
+		"resume": "A collection of speculative historical scenarios by prominent military historians.",
+		"image": "http://images.amazon.com/images/P/0425176428.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "0425176428",
+		"copies": 37
+	},
+	{
+		"titre": "PLEADING GUILTY",
+		"auteur": "Scott Turow",
+		"date_de_publication": 1993,
+		"resume": "A legal thriller that delves into the complexities of the criminal justice system.",
+		"image": "http://images.amazon.com/images/P/0671870432.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0671870432",
+		"copies": 6
+	},
+	{
+		"titre": "Under the Black Flag: The Romance and the Reality of Life Among the Pirates",
+		"auteur": "David Cordingly",
+		"date_de_publication": 1996,
+		"resume": "An engaging exploration of pirate lore and history, separating fact from fiction.",
+		"image": "http://images.amazon.com/images/P/0679425608.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "0679425608",
+		"copies": 29
+	},
+	{
+		"titre": "Where You'll Find Me: And Other Stories",
+		"auteur": "Ann Beattie",
+		"date_de_publication": 2002,
+		"resume": "A collection of thought-provoking short stories that explore the human experience.",
+		"image": "http://images.amazon.com/images/P/074322678X.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "074322678X",
+		"copies": 17
+	},
+	{
+		"titre": "Nights Below Station Street",
+		"auteur": "David Adams Richards",
+		"date_de_publication": 1988,
+		"resume": "A powerful narrative depicting life in a small Canadian town and the challenges faced by its residents.",
+		"image": "http://images.amazon.com/images/P/0771074670.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0771074670",
+		"copies": 23
+	},
+	{
+		"titre": "Hitler's Secret Bankers: The Myth of Swiss Neutrality During the Holocaust",
+		"auteur": "Adam Lebor",
+		"date_de_publication": 2000,
+		"resume": "An examination of Switzerland's role during the Holocaust and its financial dealings with Nazi Germany.",
+		"image": "http://images.amazon.com/images/P/080652121X.01.LZZZZZZZ.jpg",
+		"categorie": 4,
+		"isbn": "080652121X",
+		"copies": 32
+	},
+	{
+		"titre": "The Middle Stories",
+		"auteur": "Sheila Heti",
+		"date_de_publication": 2004,
+		"resume": "A collection of enigmatic and thought-provoking short stories that explore human emotions and experiences.",
+		"image": "http://images.amazon.com/images/P/0887841740.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "0887841740",
+		"copies": 14
+	},
+	{
+		"titre": "Jane Doe",
+		"auteur": "R. J. Kaiser",
+		"date_de_publication": 1999,
+		"resume": "A gripping psychological thriller that unravels the mystery behind a woman's identity.",
+		"image": "http://images.amazon.com/images/P/1552041778.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "1552041778",
+		"copies": 21
+	},
+	{
+		"titre": "A Second Chicken Soup for the Woman's Soul (Chicken Soup for the Soul Series)",
+		"auteur": "Jack Canfield",
+		"date_de_publication": 1998,
+		"resume": "A heartwarming collection of stories that celebrate the strength and resilience of women.",
+		"image": "http://images.amazon.com/images/P/1558746218.01.LZZZZZZZ.jpg",
+		"categorie": 2,
+		"isbn": "1558746218",
+		"copies": 5
+	},
+	{
+		"titre": "The Witchfinder (Amos Walker Mystery Series)",
+		"auteur": "Loren D. Estleman",
+		"date_de_publication": 1998,
+		"resume": "A thrilling mystery novel centered around private investigator Amos Walker's quest to solve a puzzling case.",
+		"image": "http://images.amazon.com/images/P/1567407781.01.LZZZZZZZ.jpg",
+		"categorie": 1,
+		"isbn": "1567407781",
+		"copies": 28
+	},
+	{
+		"titre": "More Cunning Than Man: A Social History of Rats and Man",
+		"auteur": "Robert Hendrickson",
+		"date_de_publication": 1999,
+		"resume": "An intriguing exploration of the complex relationship between humans and rats throughout history.",
+		"image": "http://images.amazon.com/images/P/1575663937.01.LZZZZZZZ.jpg",
+		"categorie": 5,
+		"isbn": "1575663937",
+		"copies": 13
+	}
+]

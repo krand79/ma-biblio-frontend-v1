@@ -20,7 +20,7 @@
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<label for="avatar" tabindex="0" class="btn btn-ghost btn-circle avatar">
 					<div id="avatar" class="w-10 rounded-full">
-						<img alt="profile" src="logo.svg" />
+						<img alt="profile" src="/avatar.svg" />
 					</div>
 				</label>
 
