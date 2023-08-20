@@ -2,15 +2,31 @@
 	import type { PageData } from './$types';
 	import { superForm } from 'sveltekit-superforms/client';
 	import toast, { Toaster } from 'svelte-french-toast';
+	import { goto } from '$app/navigation';
 
 	export let data: PageData;
 
 	const { form, errors, enhance, constraints } = superForm(data.form, {
 		resetForm: true,
-		onUpdate({ form }) {
+		onUpdate: async ({ form }) => {
 			// Form validation
 			if (form.valid) {
-				toast.success('Lien de réinitialisation envoyé!');
+				const response = await fetch('http://127.0.0.1:8000/api/auth/reset-password', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(form.data)
+				});
+				const data = await response.json();
+				if (response.ok) {
+					toast.success('Un email de réinitialisation a été envoyé à votre adresse email');
+					setTimeout(() => {
+						goto('/login');
+					}, 2000);
+				} else {
+					toast.error(data.email);
+				}
 			}
 		}
 	});
