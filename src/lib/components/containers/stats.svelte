@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
 	import Stat from '$lib/components/cards/stat.svelte';
+	export let count_books: {
+		count: number;
+		count_copies: number;
+	};
 </script>
 
 <div class="stats shadow">
@@ -33,7 +37,13 @@
 		>
 	</Stat>
 
-	<Stat title="Nouvelles Inscriptions" desc="↘︎ 90 (14%)" value="1,200">
+	<Stat
+		title="L'Ensemble des Livres"
+		desc={`copies ↗︎ ${count_books.count_copies} (${
+			Math.round((count_books.count_copies / count_books.count) * 100) || 0
+		}%)`}
+		value={`${count_books.count}`}
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

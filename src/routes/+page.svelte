@@ -8,7 +8,7 @@
 
 	export let data: PageData;
 
-	const { categories } = data;
+	const { categories, books, count_books } = data;
 </script>
 
 <svelte:head>
@@ -21,10 +21,10 @@
 <main class="flex flex-col mb-12 px-12">
 	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
 	<Categories {categories} />
-	<!-- <div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
-	<Books />
+	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
+	<Books books={books.slice(0, 4)} />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
-	<Books /> -->
+	<Books books={books.slice(4)} />
 	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
-	<Stats />
+	<Stats {count_books} />
 </main>
