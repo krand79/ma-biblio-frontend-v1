@@ -11,13 +11,16 @@
 		onUpdate: async ({ form }) => {
 			// Form validation
 			if (form.valid) {
-				const response = await fetch('http://127.0.0.1:8000/api/auth/reset-password/', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify(form.data)
-				});
+				const response = await fetch(
+					'https://ma-biblio-backend.vercel.app/api/auth/reset-password/',
+					{
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify(form.data)
+					}
+				);
 				const data = await response.json();
 				if (response.ok) {
 					toast.success('Un email de réinitialisation a été envoyé à votre adresse email');

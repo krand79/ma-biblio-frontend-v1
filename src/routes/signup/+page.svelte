@@ -14,7 +14,7 @@
 				const user = {
 					...form.data
 				};
-				const response = await fetch('http://127.0.0.1:8000/api/auth/register', {
+				const response = await fetch('https://ma-biblio-backend.vercel.app/api/auth/register', {
 					method: 'POST',
 					body: JSON.stringify(user),
 					headers: {

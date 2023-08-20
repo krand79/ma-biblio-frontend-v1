@@ -12,16 +12,19 @@
 		onUpdate: async ({ form }) => {
 			// Form validation
 			if (form.valid) {
-				const response = await fetch('http://127.0.0.1:8000/api/auth/reset-password/confirm/', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify({
-						...form.data,
-						token: token
-					})
-				});
+				const response = await fetch(
+					'https://ma-biblio-backend.vercel.app/api/auth/reset-password/confirm/',
+					{
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({
+							...form.data,
+							token: token
+						})
+					}
+				);
 				const data = await response.json();
 				if (response.ok) {
 					toast.success('Votre mot de pass a été réinitialisé avec succès');
