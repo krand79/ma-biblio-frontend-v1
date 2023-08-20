@@ -1,9 +1,14 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Carousel from '$lib/components/carousel.svelte';
 	import Categories from '$lib/components/containers/categories.svelte';
 	import Books from '$lib/components/containers/books.svelte';
 	import Stats from '$lib/components/containers/stats.svelte';
+
+	export let data: PageData;
+
+	const { categories } = data;
 </script>
 
 <svelte:head>
@@ -15,7 +20,7 @@
 
 <main class="flex flex-col mb-12 px-12">
 	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
-	<Categories />
+	<Categories {categories} />
 	<!-- <div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
 	<Books />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
