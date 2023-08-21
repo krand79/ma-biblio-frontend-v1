@@ -13,7 +13,7 @@
 	}[];
 </script>
 
-<section class="my-6 grid grid-cols-2 gap-10 px-24">
+<section class="my-6 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-24">
 	{#each books as book}
 		<BookCard {book} />
 	{/each}

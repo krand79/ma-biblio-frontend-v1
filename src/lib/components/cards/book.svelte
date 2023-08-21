@@ -13,12 +13,12 @@
 </script>
 
 <div class="indicator w-full relative">
-	<div class="card card-side bg-base-100 shadow-xl">
+	<div class="card md:card-side bg-base-100 shadow-xl">
 		<span class="indicator-item badge badge-secondary">
 			{book.copies}
 		</span>
 		<figure class="!w-full object-cover">
-			<img class="object-cover w-full h-full" src={book.image} alt={book.titre} />
+			<img class="object-cover rounded-2xl w-full h-full" src={book.image} alt={book.titre} />
 		</figure>
 		<div class="card-body !w-full">
 			<h2 class="card-title font-semibold">

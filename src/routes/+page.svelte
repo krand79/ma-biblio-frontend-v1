@@ -21,9 +21,9 @@
 <main class="flex flex-col mb-12 px-12">
 	<div class="divider text-3xl mt-10 font-semibold">Nos Catégories</div>
 	<Categories {categories} />
-	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Recommandés</div>
+	<div class="divider text-3xl mt-10 font-semibold">Recommandés</div>
 	<Books books={books.slice(0, 4)} />
-	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
+	<div class="divider text-3xl mt-10 font-semibold">Populaires</div>
 	<Books books={books.slice(4)} />
 	<div class="flex flex-col items-center justify-center m-3">
 		<a href="/books"><button class="btn btn-outline btn-primary">Tous les livres</button></a>

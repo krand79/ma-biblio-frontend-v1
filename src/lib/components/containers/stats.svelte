@@ -12,7 +12,7 @@
 	export let count_users: { count: number };
 </script>
 
-<div class="stats shadow">
+<div class="stats stats-vertical md:stats-horizontal shadow">
 	<Stat
 		title="Utilisateurs"
 		desc={`↗︎ ${count_emprunts.count_emprunters}/${count_users.count} ont emprunté`}

@@ -8,7 +8,7 @@
 	}[];
 </script>
 
-<section class="my-6 grid grid-cols-3 gap-6 px-6">
+<section class="my-6 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
 	{#each categories as category}
 		<CategoryCard {category} />
 	{/each}
