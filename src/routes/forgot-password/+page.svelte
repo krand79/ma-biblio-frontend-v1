@@ -44,7 +44,7 @@
 	<a href="/" class="text-inherit w-1/2 md:w-1/3"
 		><img src="logo.svg" class="w-full object-contain" alt="LOGO" /></a
 	>
-	<h1 class="text-4xl font-bold mb-6 mt-8">Réinitialiser le Mot de pass</h1>
+	<h1 class="text-4xl text-center font-bold mb-6 mt-8">Réinitialiser le Mot de pass</h1>
 	<form class="flex flex-col space-y-4" method="POST" use:enhance>
 		<!-- email -->
 		<div class="form-control">

@@ -50,7 +50,7 @@
 		><img src="logo.svg" class="w-full object-contain" alt="LOGO" /></a
 	>
 	<h1 class="text-4xl font-bold my-8">Créer un Compte</h1>
-	<form class="grid grid-cols-2 gap-6" method="POST" use:enhance>
+	<form class="grid grid-cols-1 md:grid-cols-2 gap-6" method="POST" use:enhance>
 		<!-- email -->
 		<div class="form-control">
 			<label for="email" class="label">
@@ -123,8 +123,8 @@
 			{/if}
 		</div>
 		<!-- submit -->
-		<div class="form-control col-span-2 w-full flex flex-col items-center">
-			<button type="submit" class="btn w-1/2 btn-primary"> Créer un Compte </button>
+		<div class="form-control md:col-span-2 w-full flex flex-col items-center">
+			<button type="submit" class="btn w-full md:w-1/2 btn-primary"> Créer un Compte </button>
 			<!-- forgot password -->
 			<div class="form-control mt-4">
 				<a href="/login" class="link link-primary">Se Connecter?</a>
