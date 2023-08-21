@@ -65,7 +65,7 @@
 <Toaster />
 
 <!-- <SuperDebug data={$form} /> -->
-<div class="flex flex-col justify-center items-center h-screen relative">
+<div class="flex flex-col justify-center items-center min-h-screen relative">
 	<a href="/" class="text-inherit w-1/2 md:w-1/3"
 		><img src="logo.svg" class="w-full object-contain" alt="LOGO" /></a
 	>

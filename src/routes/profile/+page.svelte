@@ -58,7 +58,7 @@
 			<div
 				class="col-span-12 md:col-span-8 flex flex-col items-start md:border-l-[0.5px] border-opacity-70 px-4 justify-start h-full pt-12"
 			>
-				<h1 class="text-4xl font-semibold mb-6">Mes Empruntes:</h1>
+				<h1 class="text-4xl font-semibold mb-6">Mes Emprunts:</h1>
 				<Table {header} {data} />
 			</div>
 		</div>

@@ -40,7 +40,7 @@
 </svelte:head>
 <Toaster />
 
-<div class="flex flex-col justify-center h-screen relative items-center">
+<div class="flex flex-col justify-center min-h-screen relative items-center">
 	<a href="/" class="text-inherit w-1/2 md:w-1/3"
 		><img src="logo.svg" class="w-full object-contain" alt="LOGO" /></a
 	>
