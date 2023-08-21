@@ -62,7 +62,7 @@
 			});
 
 			if (!response.ok) {
-				toast.error('Une erreur est survenue');
+				toast.error((await response.text()) || 'Une erreur est survenue');
 				return;
 			}
 

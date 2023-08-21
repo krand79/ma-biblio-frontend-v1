@@ -1,16 +1,49 @@
 <script lang="ts">
 	import user from '../../store/user';
+	import { onMount } from 'svelte';
+	import SearchMenu from './searchMenu.svelte';
+
+	let search = '';
+	let min_books = {};
+	let inputRect = {};
+
+	onMount(async () => {
+		const input = document.querySelector('.input');
+		inputRect = input.getBoundingClientRect();
+
+		const min_books_response = await fetch('https://ma-biblio-backend.vercel.app/api/livre/min', {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		min_books = await min_books_response.json();
+	});
+
+	// @ts-ignore
+	const onChange = (e) => {
+		search = e.target.value;
+	};
 </script>
 
 <div class="navbar sticky z-50 top-0 shadow-lg bg-base-100">
 	<div class="navbar-start">
 		<a href="/" class="text-inherit w-[150px]"
-			><img src="logo.svg" class="w-full object-contain" alt="LOGO" /></a
+			><img src="/logo.svg" class="w-full object-contain" alt="LOGO" /></a
 		>
 	</div>
-	<div class="form-control md:min-w-[50%] hidden md:flex">
-		<input type="text" placeholder="Chercher un livre" class="input w-full input-bordered" />
+	<div class="form-control relative md:min-w-[50%] md:flex">
+		<input
+			type="text"
+			placeholder="Chercher un livre"
+			class="input w-full input-bordered"
+			on:input={onChange}
+		/>
+		{#if search}
+			<SearchMenu {search} {inputRect} {min_books} />
+		{/if}
 	</div>
+
 	<div class="navbar-end">
 		{#if $user.email}
 			<h2 class=" italic font-semibold mr-3">

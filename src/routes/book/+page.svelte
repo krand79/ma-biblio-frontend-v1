@@ -4,7 +4,8 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const { book, category_name, emprunts } = data;
+	$: ({ book } = data);
+	const { category_name, emprunts } = data;
 </script>
 
 <svelte:head>
