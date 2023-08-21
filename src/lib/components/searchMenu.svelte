@@ -7,7 +7,9 @@
 </script>
 
 <ul
-	class="menu absolute z-1 bg-base-200 flex flex-col w-full max-h-[400px] overflow-auto rounded-box mt-2"
+	class="menu absolute z-1 bg-base-200 flex flex-col w-full max-h-[400px] overflow-auto rounded-box mt-2
+	
+	"
 	style="top: {inputRect.bottom}px;"
 >
 	{#each min_books_keys as key}
