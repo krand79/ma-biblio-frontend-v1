@@ -4,36 +4,30 @@
 		count: number;
 		count_copies: number;
 	};
+	export let count_emprunts: {
+		count_emprunts: number;
+		count_emprunters: number;
+		avg: number;
+	};
+	export let count_users: { count: number };
 </script>
 
 <div class="stats shadow">
-	<Stat title="Emptuntes" desc="Jan 1st - Feb 1st" value="1,200">
+	<Stat
+		title="Utilisateurs"
+		desc={`↗︎ ${count_emprunts.count_emprunters}/${count_users.count} ont emprunté`}
+		value={`${count_users.count}`}
+	>
 		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
 			class="inline-block w-8 h-8 stroke-current"
-			><path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-width="2"
-				d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-			/></svg
-		>
-	</Stat>
-
-	<Stat title="Nouveaux Utilisateurs" desc="↗︎ 400 (22%)" value="4,200">
-		<svg
 			xmlns="http://www.w3.org/2000/svg"
+			data-name="Layer 1"
+			viewBox="0 0 48 48"
 			fill="none"
-			viewBox="0 0 24 24"
-			class="inline-block w-8 h-8 stroke-current"
 			><path
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-width="2"
-				d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-			/></svg
+				stroke-width="4"
+				d="M31.64,27.72a13.94,13.94,0,0,1-15.28,0A18,18,0,0,0,6.05,42.94a1,1,0,0,0,.27.75,1,1,0,0,0,.73.31H41a1,1,0,0,0,.73-.31,1,1,0,0,0,.27-.75A18,18,0,0,0,31.64,27.72Z"
+			/><circle stroke-width="4" cx="24" cy="16" r="12" /></svg
 		>
 	</Stat>
 
@@ -54,6 +48,25 @@
 				stroke-linejoin="round"
 				stroke-width="2"
 				d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+			/></svg
+		>
+	</Stat>
+
+	<Stat
+		title="Emptunts"
+		desc={`Avg ${count_emprunts.avg} par emprunteur`}
+		value={`${count_emprunts.count_emprunts}`}
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			class="inline-block w-8 h-8 stroke-current"
+			><path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 			/></svg
 		>
 	</Stat>

@@ -41,8 +41,22 @@ export const load = async ({ url }) => {
 		description: string;
 	} = await category_response.json();
 
+	const emprunts_response = await fetch(
+		`https://ma-biblio-backend.vercel.app/api/emprunt/count/livre/${book.id}`,
+		{
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		}
+	);
+	const emprunts: {
+		count: number;
+	} = await emprunts_response.json();
+
 	return {
 		book,
-		category_name: category.name
+		category_name: category.name,
+		emprunts: emprunts.count
 	};
 };

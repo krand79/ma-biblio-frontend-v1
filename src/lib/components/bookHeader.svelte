@@ -14,6 +14,7 @@
 		copies: number;
 	};
 	export let category_name: string;
+	export let emprunts: number;
 </script>
 
 <Toaster />
@@ -33,7 +34,7 @@
 			</small>
 			<p class="py-6">{book.resume}</p>
 			<div class="flex flex-row items-center !w-10/12 space-x-4 mt-4 justify-end">
-				<LoanForm {book} />
+				<LoanForm {emprunts} {book} />
 			</div>
 		</div>
 	</div>

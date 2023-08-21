@@ -10,6 +10,7 @@
 		isbn: string;
 		copies: number;
 	};
+	export let emprunts: number;
 	import { DateInput, localeFromDateFnsLocale } from 'date-picker-svelte';
 	import { fr } from 'date-fns/locale';
 	import { format } from 'date-fns';
@@ -80,7 +81,7 @@
 		<button on:click={submit} class="btn flex !flex-row btn-neutral">
 			<p>Emprunter</p>
 			<div class="badge badge-secondary">
-				{book.copies}/{book.copies}
+				{book.copies - emprunts}/{book.copies}
 			</div>
 		</button>
 	</div>

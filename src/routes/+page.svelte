@@ -8,7 +8,7 @@
 
 	export let data: PageData;
 
-	const { categories, books, count_books } = data;
+	const { categories, books, count_books, count_emprunts, count_users } = data;
 </script>
 
 <svelte:head>
@@ -29,5 +29,5 @@
 		<a href="/books"><button class="btn btn-outline btn-primary">Tous les livres</button></a>
 	</div>
 	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
-	<Stats {count_books} />
+	<Stats {count_books} {count_emprunts} {count_users} />
 </main>
