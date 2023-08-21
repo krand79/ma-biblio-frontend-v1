@@ -6,33 +6,32 @@
 	import { onMount } from 'svelte';
 
 	let header = ['Titre', 'Auteur', 'Date de publication', 'ISBN', 'Emprunté le', 'Retourner le'];
-	let apidata = [
-		{
-			title: 'The Lord of the Rings',
-			auteur: 'J. R. R. Tolkien',
-			date: '29 July 1954',
-			isbn: '978-3-16-148410-0',
-			emprunt: '12/16/2020',
-			retour: '12/16/2020'
-		},
-		{
-			title: ' of the Rings',
-			auteur: 'J. R. R. Tolkien',
-			date: '29 July 1954',
-			isbn: '958-3-16-148410-0',
-			emprunt: '12/16/2020',
-			retour: '12/16/2020'
-		}
-	];
-
-	let data: string[][] = apidata.map((item) => {
-		return [item.title, item.auteur, item.date, item.isbn, item.emprunt, item.retour];
-	});
+	let data: {
+		id: string;
+		livre__titre: string;
+		livre__auteur: string;
+		livre__isbn: string;
+		livre__la_date: number;
+		date_d_emprunt: string;
+		date_de_retour: string;
+	}[] = [];
 
 	// check if there's a user
-	onMount(() => {
+	onMount(async () => {
 		if (!$user.email) {
 			goto('/');
+		} else {
+			const response = await fetch(
+				`https://ma-biblio-backend.vercel.app/api/emprunt/get_user/${$user.id}`,
+				{
+					method: 'GET',
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				}
+			);
+			data = await response.json();
+			console.log(data);
 		}
 	});
 </script>
