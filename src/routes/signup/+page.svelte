@@ -22,7 +22,6 @@
 					}
 				});
 				const data = await response.json();
-				console.log(data);
 				if (response.ok) {
 					toast.success('Votre Compte a été Créer avec Succès');
 					setTimeout(() => {

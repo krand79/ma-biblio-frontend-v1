@@ -1,5 +1,6 @@
 <script lang="ts">
 	import user from '../../store/user';
+	import tokens from '../../store/tokens';
 	import { onMount } from 'svelte';
 	import SearchMenu from './searchMenu.svelte';
 
@@ -9,6 +10,7 @@
 
 	onMount(async () => {
 		const input = document.querySelector('.input');
+		// @ts-ignore
 		inputRect = input.getBoundingClientRect();
 
 		const min_books_response = await fetch('https://ma-biblio-backend.vercel.app/api/livre/min', {
@@ -68,7 +70,15 @@
 							<span class="badge">New</span>
 						</a>
 					</li>
-					<li><a on:click={user.reset} href="/">Logout</a></li>
+					<li>
+						<a
+							on:click={() => {
+								tokens.reset();
+								user.reset();
+							}}
+							href="/">Logout</a
+						>
+					</li>
 				</ul>
 			</div>
 		{:else}

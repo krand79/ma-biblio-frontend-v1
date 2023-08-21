@@ -46,7 +46,6 @@
 
 	const submit = async () => {
 		if (validate()) {
-			console.log('submit');
 			const emprunt = {
 				livre: book.id,
 				user: $user.id,

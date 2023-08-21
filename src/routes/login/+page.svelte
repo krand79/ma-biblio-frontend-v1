@@ -4,6 +4,7 @@
 	import toast, { Toaster } from 'svelte-french-toast';
 	import { goto } from '$app/navigation';
 	import storeuser from '../../store/user';
+	import storetokens from '../../store/tokens';
 	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	export let data: PageData;
@@ -24,22 +25,38 @@
 					}
 				});
 				const data = await response.json();
-				console.log(data);
 				if (response.ok) {
-					storeuser.set({
-						...data
-					});
-					toast.success('Bienvenue');
-					setTimeout(() => {
-						goto('/');
-					}, 2000);
+					const tokens_response = await fetch(
+						'https://ma-biblio-backend.vercel.app/api/auth/tokens/',
+						{
+							method: 'POST',
+							body: JSON.stringify(user),
+							headers: {
+								'Content-Type': 'application/json'
+							}
+						}
+					);
+					const tokens = await tokens_response.json();
+					if (tokens_response.ok) {
+						storetokens.set({
+							...tokens
+						});
+						storeuser.set({
+							...data
+						});
+						toast.success('Bienvenue');
+						setTimeout(() => {
+							goto('/');
+						}, 1000);
+					} else {
+						toast.error(tokens?.detail || 'Une erreur est survenue');
+					}
 				} else {
 					toast.error(data?.detail || 'Une erreur est survenue');
 				}
 			}
 		}
 	});
-	console.log($form);
 </script>
 
 <svelte:head>
