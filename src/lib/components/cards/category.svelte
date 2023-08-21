@@ -13,7 +13,9 @@
 		<h2 class="text-xl font-semibold card-title">{category.name}</h2>
 		<p>{category.description}</p>
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary"> Voir Plus </button>
+			<a href="/books?category={category.id}">
+				<button class="btn btn-primary"> Voir Plus </button>
+			</a>
 		</div>
 	</div>
 </div>

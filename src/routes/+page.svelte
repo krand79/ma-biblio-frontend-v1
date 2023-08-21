@@ -25,6 +25,9 @@
 	<Books books={books.slice(0, 4)} />
 	<div class="divider text-3xl mt-10 font-semibold">Nos Livres Populaires</div>
 	<Books books={books.slice(4)} />
+	<div class="flex flex-col items-center justify-center m-3">
+		<a href="/books"><button class="btn btn-outline btn-primary">Tous les livres</button></a>
+	</div>
 	<div class="divider text-3xl mt-10 font-semibold">Des Chiffres</div>
 	<Stats {count_books} />
 </main>

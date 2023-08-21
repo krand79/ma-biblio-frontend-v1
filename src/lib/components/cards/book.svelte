@@ -32,7 +32,7 @@
 				{book.auteur}, {book.la_date}
 			</small>
 			<div class="card-actions justify-end">
-				<a href="/books?isbn={book.isbn}"><button class="btn btn-primary">Emprunter</button></a>
+				<a href="/book?isbn={book.isbn}"><button class="btn btn-primary">Emprunter</button></a>
 			</div>
 		</div>
 	</div>

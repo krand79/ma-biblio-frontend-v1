@@ -47,7 +47,7 @@
 		<div class="grid grid-cols-12 h-full w-full gap-0">
 			<!-- left -->
 			<div class="col-span-4 flex flex-col items-center justify-start h-full pt-12">
-				<img src="/avatar.svg" class="h-48 w-48 object-cover" alt="Profile" />
+				<img src="/avatar.svg" class="h-48 w-48 rounded-full object-cover" alt="Profile" />
 				<h1 class="text-3xl font-semibold mb-6 mt-8">
 					{$user.name}
 				</h1>
