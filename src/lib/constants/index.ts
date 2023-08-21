@@ -10,5 +10,11 @@ export const CarouselDataItems = [
 		description:
 			'Notre moteur de recherche vous permet de trouver rapidement le livre parfait pour vous. Filtrez par titre et explorez des recommandations personnalisées pour enrichir votre expérience de lecture.',
 		image: 'illus/books.svg'
+	},
+	{
+		title: 'Partagez votre passion',
+		description:
+			'Partagez vos livres préférés avec vos amis et votre famille. Découvrez ce que les autres lisent et partagez vos propres recommandations. Rejoignez une communauté de lecteurs passionnés.',
+		image: 'illus/reading.svg'
 	}
 ];
