@@ -10,11 +10,12 @@
 	let inputRectMobile = {};
 
 	onMount(async () => {
-		const input = document.querySelector('.input');
+		const inputMobile = document.querySelector('#mobile');
+		const inputDesktop = document.querySelector('#desktop');
 		// @ts-ignore
-		inputRect = input.getBoundingClientRect();
+		inputRect = inputDesktop.getBoundingClientRect();
 		// @ts-ignore
-		inputRectMobile = input.getBoundingClientRect();
+		inputRectMobile = inputMobile.getBoundingClientRect();
 
 		const min_books_response = await fetch('https://ma-biblio-backend.vercel.app/api/livre/min', {
 			method: 'GET',
@@ -44,6 +45,7 @@ flex-col items-center !w-full h-fit shadow-lg md:pb-0 pb-2"
 		<!-- middle search -->
 		<div class="form-control relative hidden md:min-w-[50%] md:flex">
 			<input
+				id="desktop"
 				type="text"
 				placeholder="Chercher un livre"
 				class="input invisible hidden md:flex md:visible w-full input-bordered"
@@ -96,7 +98,7 @@ flex-col items-center !w-full h-fit shadow-lg md:pb-0 pb-2"
 			{/if}
 		</div>
 	</div>
-	<div class="form-control min-w-[90%] relative flex md:min-w-[50%] md:hidden">
+	<div id="mobile" class="form-control min-w-[90%] relative flex md:min-w-[50%] md:hidden">
 		<input
 			type="text"
 			placeholder="Chercher un livre"

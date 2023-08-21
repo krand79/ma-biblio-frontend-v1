@@ -8,9 +8,8 @@
 
 <ul
 	class="menu absolute z-1 bg-base-200 flex flex-col w-full max-h-[400px] overflow-auto rounded-box mt-2
-	
 	"
-	style="top: {inputRect.bottom}px;"
+	style="top: {inputRect.bottom - inputRect.y}px;"
 >
 	{#each min_books_keys as key}
 		{#if min_books[key].filter((book) => book.titre
@@ -23,7 +22,11 @@
 				.includes(search.toLowerCase())) as book}
 			<li>
 				<a href="/book?isbn={book.isbn}" class="flex items-center">
-					<img src={book.image} alt={book.titre} class="w-10 h-10 rounded-full mr-2" />
+					<img
+						src={book.image}
+						alt={book.titre}
+						class="!w-10 !min-w-[40px] !h-10 rounded-full object-cover mr-2"
+					/>
 					<span>{book.titre}</span>
 				</a>
 			</li>
