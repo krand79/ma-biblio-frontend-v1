@@ -41,10 +41,10 @@
 
 <Navbar />
 {#if $user.email}
-	<main class="flex flex-col justify-center items-center h-screen relative">
+	<main class="flex flex-col justify-center items-center min-h-screen mb-4 relative">
 		<div class="grid grid-cols-12 h-full w-full gap-0">
 			<!-- left -->
-			<div class="col-span-4 flex flex-col items-center justify-start h-full pt-12">
+			<div class="col-span-12 md:col-span-4 flex flex-col items-center justify-start h-full pt-12">
 				<img src="/avatar.svg" class="h-48 w-48 rounded-full object-cover" alt="Profile" />
 				<h1 class="text-3xl font-semibold mb-6 mt-8">
 					{$user.name}
@@ -56,7 +56,7 @@
 			</div>
 			<!-- right -->
 			<div
-				class="col-span-8 flex flex-col items-start border-l-[0.5px] border-opacity-70 px-4 justify-start h-full pt-12"
+				class="col-span-12 md:col-span-8 flex flex-col items-start md:border-l-[0.5px] border-opacity-70 px-4 justify-start h-full pt-12"
 			>
 				<h1 class="text-4xl font-semibold mb-6">Mes Empruntes:</h1>
 				<Table {header} {data} />

@@ -31,6 +31,7 @@
 			toast.error('Vous devez être connecté pour emprunter un livre');
 			return false;
 		}
+		console.log($user);
 		if (date_d_emprunt < date_de_passe) {
 			toast.error("Date d'emprunt invalide");
 			return false;
@@ -85,7 +86,9 @@
 		</button>
 	</div>
 	<div class="card border w-full">
-		<div class="p-6 flex flex-row !items-center !justify-center w-full space-x-5">
+		<div
+			class="p-4 md:p-6 flex flex-col md:flex-row !items-center !justify-center w-full space-y-4 md:space-y-0 space-x-0 md:space-x-5"
+		>
 			<div class="form-control w-fit">
 				<label for="data_d_emprunt" class="label">
 					<span class="label-text"> Date d&apos;emprunt </span>
@@ -97,7 +100,7 @@
 					{locale}
 				/>
 			</div>
-			<div class="form-control flex flex-col items-center justify-center w-fit">
+			<div class="form-control hidden md:flex flex-col items-center justify-center w-fit">
 				<label for="data_d_emprunt" class="label">
 					<span class="label-text" />
 				</label>

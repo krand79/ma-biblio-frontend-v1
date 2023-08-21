@@ -12,15 +12,27 @@
 				Authorization: `Bearer ${access}`
 			}
 		});
-		const data = await response.json();
-		return data;
+		return response;
 	};
 
 	if ($tokens.access && !$user.id) {
-		getUserCredentials($tokens.access).then((data) => {
-			user.set({
-				...data
-			});
+		getUserCredentials($tokens.access).then((response) => {
+			if (response.status === 200) {
+				response.json().then((data) => {
+					user.set(data);
+				});
+			}
+			// else {
+			// 	getUserCredentials($tokens.refresh).then((response) => {
+			// 		if (response.status === 200) {
+			// 			response.json().then((data) => {
+			// 				user.set(data);
+			// 			});
+			// 		} else {
+			// 			tokens.set({ access: '', refresh: '' });
+			// 		}
+			// 	});
+			// }
 		});
 	}
 </script>

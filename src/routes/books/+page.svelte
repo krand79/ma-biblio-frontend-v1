@@ -14,7 +14,7 @@
 
 <Navbar />
 
-<main class="flex min-h-screen flex-col px-12">
+<main class="flex min-h-screen flex-col px-4 md:px-12">
 	{#if category_id}
 		<CategoryHeader {category} />
 	{/if}
