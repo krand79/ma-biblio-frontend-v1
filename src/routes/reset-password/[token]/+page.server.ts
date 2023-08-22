@@ -3,7 +3,7 @@ import { superValidate } from 'sveltekit-superforms/server';
 import { z } from 'zod';
 
 const loginSchema = z.object({
-	password: z.string().min(6)
+	password: z.string().min(9)
 });
 
 /** @type {import('./$types').PageServerLoad} */
